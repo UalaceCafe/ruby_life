@@ -12,9 +12,9 @@ Ruby's Life is a recreation of the well-known cellular automaton [_Conway's Game
 
 | Control           | Description                                                                 |
 |:------------------|:----------------------------------------------------------------------------|
-| Left Mouse Button | Draws a cell                                                                |
+| Left Mouse Button | Adds or removes a cell                                                      |
 | P                 | Pauses the game                                                             |
-| R                 | Resets the grid to the previous state (i.e. before the last cell was drawn) |
+| R                 | Resets the grid to the previous state (i.e. before the last cell was added) |
 | C                 | Clears the screen                                                           |                                                            
 | ESC               | Exit the game                                                               |
 
