@@ -74,14 +74,19 @@ render do
       x = j * SIZE
       y = i * SIZE
       if grid[index(j, i)] == 1
-        Square.draw(
-          x: x, y: y, size: SIZE, color: [
-            [0.55, 0.84, 0.68, 1],
-            [0.55, 0.84, 0.68, 1],
-            [0.55, 0.84, 0.68, 1],
-            [0.55, 0.84, 0.68, 1]
-          ]
-        )
+        color = case count_neighbors(grid, index(j, i))
+                when 0
+                  [0.2, 0.263, 0.478, 1.0]
+                when 1
+                  [0.251, 0.506, 0.337, 1.0]
+                when 2
+                  [0.576, 0.639, 0.11, 1.0]
+                when 3
+                  [0.839, 0.667, 0.149, 1.0]
+                else
+                  [0.741, 0.165, 0.2, 1.0]
+                end
+        Square.draw(x: x, y: y, size: SIZE, color: [color, color, color, color])
       else
         Square.draw(
           x: x, y: y, size: SIZE, color: [

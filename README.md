@@ -18,6 +18,26 @@ Ruby's Life is a recreation of the well-known cellular automaton [_Conway's Game
 | C                 | Clears the screen                                                           |                                                            
 | ESC               | Exit the game                                                               |
 
+## Rules
+
+This implementation follows the [standard set of rules](https://en.wikipedia.org/wiki/Conway's_Game_of_Life#Rules) chosen by Conway.
+i.e.:
+
+> 1. Any live cell with two or three live neighbours survives. 
+> 2. Any dead cell with three live neighbours becomes a live cell.
+> 3. All other live cells die in the next generation. Similarly, all other dead cells stay dead.
+
+Furthermore, this game make use of different colors to represent the state of a cell
+
+| Color                                                        | State | Neighbors |
+|:------------------------------------------------------------:|:------|:---------:|
+| ![#141E19](https://via.placeholder.com/15/141E19/141E19.png) | Dead  | -         |
+| ![#35427B](https://via.placeholder.com/15/35427B/35427B.png) | Alive | 0         |
+| ![#407A52](https://via.placeholder.com/15/407A52/407A52.png) | Alive | 1         |
+| ![#94A617](https://via.placeholder.com/15/94A617/94A617.png) | Alive | 2         |
+| ![#D8A723](https://via.placeholder.com/15/D8A723/D8A723.png) | Alive | 3         |
+| ![#BC2A33](https://via.placeholder.com/15/BC2A33/BC2A33.png) | Alive | > 3       |
+
 ## Credits
 
 * John Horton Conway for coming up with the Game of Life;
