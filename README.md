@@ -32,11 +32,11 @@ Furthermore, this game make use of different colors to represent the state of a 
 | Color                                                        | State | Neighbors |
 |:------------------------------------------------------------:|:------|:---------:|
 | ![#141E19](https://via.placeholder.com/15/141E19/141E19.png) | Dead  | -         |
-| ![#35427B](https://via.placeholder.com/15/35427B/35427B.png) | Alive | 0         |
-| ![#407A52](https://via.placeholder.com/15/407A52/407A52.png) | Alive | 1         |
-| ![#94A617](https://via.placeholder.com/15/94A617/94A617.png) | Alive | 2         |
-| ![#D8A723](https://via.placeholder.com/15/D8A723/D8A723.png) | Alive | 3         |
-| ![#BC2A33](https://via.placeholder.com/15/BC2A33/BC2A33.png) | Alive | > 3       |
+| ![#78c030](https://via.placeholder.com/15/78c030/78c030.png) | Alive | 0         |
+| ![#a8d848](https://via.placeholder.com/15/a8d848/a8d848.png) | Alive | 1         |
+| ![#f0d860](https://via.placeholder.com/15/f0d860/f0d860.png) | Alive | 2         |
+| ![#ffc018](https://via.placeholder.com/15/ffc018/ffc018.png) | Alive | 3         |
+| ![#f09000](https://via.placeholder.com/15/f09000/f09000.png) | Alive | > 3       |
 
 ## Credits
 
