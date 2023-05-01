@@ -10,6 +10,9 @@ SIZE = 10
 COLS = WIDTH / SIZE
 ROWS = HEIGHT / SIZE
 
+BLACK_COLOR = [0.0, 0.0, 0.0, 1].freeze
+DEAD_COLOR = [0.08, 0.12, 0.1, 1].freeze
+
 grid = Array.new(ROWS * COLS).map! { |_| 0 }
 previous_grid = Array.new(ROWS * COLS).map! { |_| 0 }
 paused = true
@@ -18,7 +21,7 @@ paused_text = Text.new('PAUSED')
 puts '* CONTROLS:'
 puts '  Left Mouse Button - Draws a cell'
 puts '  P - Pauses the game'
-puts '  R - Resets the grid to the previous state (i.e. before the last cell was drawn)'
+puts '  R - Returns the grid to the previous state (i.e. before the last cell was drawn)'
 puts '  C - Clears the screen'
 puts '  ESC - Exit the game'
 
@@ -73,6 +76,7 @@ render do
     ROWS.times do |i|
       x = j * SIZE
       y = i * SIZE
+      Square.draw(x: x, y: y, size: SIZE, color: [BLACK_COLOR, BLACK_COLOR, BLACK_COLOR, BLACK_COLOR])
       if grid[index(j, i)] == 1
         color = case count_neighbors(grid, index(j, i))
                 when 0
@@ -86,22 +90,20 @@ render do
                 else
                   [0.94, 0.56, 0.0, 1.0]
                 end
-        Square.draw(x: x, y: y, size: SIZE, color: [color, color, color, color])
+        Square.draw(x: x + 1, y: y + 1, size: SIZE - 2, color: [color, color, color, color])
       else
-        Square.draw(
-          x: x, y: y, size: SIZE, color: [
-            [0.08, 0.12, 0.1, 1],
-            [0.08, 0.12, 0.1, 1],
-            [0.08, 0.12, 0.1, 1],
-            [0.08, 0.12, 0.1, 1]
-          ]
-        )
+        Square.draw(x: x + 1, y: y + 1, size: SIZE - 2, color: [DEAD_COLOR, DEAD_COLOR, DEAD_COLOR, DEAD_COLOR])
       end
     end
   end
 
-  paused_text.draw(x: (WIDTH / 2) - 50, y: (HEIGHT / 2) - 15, rotate: 0, size: 31, color: [0, 0, 0, 1]) if paused
-  paused_text.draw(x: (WIDTH / 2) - 50, y: (HEIGHT / 2) - 15, rotate: 0, size: 30, color: [1, 0.69, 0, 1]) if paused
+  if paused
+    paused_text.draw(x: (WIDTH / 2) - 50, y: (HEIGHT / 2) - 15, rotate: 0, color: [0, 0, 0, 1])
+    # FIXME: (bug?) Ruby2D won't allow me to pass the size as an argument to `draw` anymore for some reason.
+    # This will have to do for now.
+    paused_text.size = 21
+    paused_text.draw(x: (WIDTH / 2) - 50, y: (HEIGHT / 2) - 15, rotate: 0, color: [1, 0.69, 0, 1])
+  end
 end
 
 update do
