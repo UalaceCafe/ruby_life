@@ -98,11 +98,12 @@ render do
   end
 
   if paused
-    paused_text.draw(x: (WIDTH / 2) - 50, y: (HEIGHT / 2) - 15, rotate: 0, color: [0, 0, 0, 1])
     # FIXME: (bug?) Ruby2D won't allow me to pass the size as an argument to `draw` anymore for some reason.
     # This will have to do for now.
-    paused_text.size = 21
-    paused_text.draw(x: (WIDTH / 2) - 50, y: (HEIGHT / 2) - 15, rotate: 0, color: [1, 0.69, 0, 1])
+    paused_text.size = 31
+    paused_text.draw(x: (WIDTH / 2) - (paused_text.width / 2), y: (HEIGHT / 2) - (paused_text.height / 2), rotate: 0, color: [0, 0, 0, 1])
+    paused_text.size = 30
+    paused_text.draw(x: (WIDTH / 2) - (paused_text.width / 2), y: (HEIGHT / 2) - (paused_text.height / 2), rotate: 0, color: [1, 0.69, 0, 1])
   end
 end
 
