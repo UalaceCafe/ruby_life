@@ -10,13 +10,13 @@ Ruby's Life is a recreation of the well-known cellular automaton [_Conway's Game
 
 ```ruby life.rb```
 
-| Control           | Description                                                                 |
-|:------------------|:----------------------------------------------------------------------------|
-| Left Mouse Button | Adds or removes a cell                                                      |
-| P                 | Pauses the game                                                             |
-| R                 | Resets the grid to the previous state (i.e. before the last cell was added) |
-| C                 | Clears the screen                                                           |                                                            
-| ESC               | Exit the game                                                               |
+| Control           | Description                                                                  |
+|:------------------|:-----------------------------------------------------------------------------|
+| Left Mouse Button | Adds or removes a cell                                                       |
+| P                 | Pauses the game                                                              |
+| R                 | Returns the grid to the previous state (i.e. before the last cell was added) |
+| C                 | Clears the screen                                                            |                                                            
+| ESC               | Exit the game                                                                |
 
 ## Rules
 
@@ -41,5 +41,5 @@ Furthermore, this game make use of different colors to represent the state of a 
 ## Credits
 
 * John Horton Conway for coming up with the Game of Life;
-* [Ruby2D's](https://github.com/ruby2d/ruby2d) developers for creating this amazing gem.
+* [Ruby2D](https://github.com/ruby2d/ruby2d) developers for creating this amazing gem.
 * [Daniel Shiffman](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) for the inspiration.
