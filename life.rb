@@ -24,12 +24,12 @@ selected_text = Text.new('', size: 12)
 SHAPES = %i[cell block blinker glider gosper_glider_gun].freeze
 
 puts '* CONTROLS:'
-puts '  Left Mouse Button - Draws a cell'
-puts '  1..5 - Select a pattern to be drawn (see below)'
+puts '  Left Mouse Button - Adds or removes a pattern'
+puts '  1..5 - Selects a pattern to be drawn (see below)'
 puts '  P - Pauses the game'
-puts '  R - Returns the grid to the previous state (i.e. before the last cell was drawn)'
+puts '  R - Returns the grid to the previous state (i.e. before the last cell was modified)'
 puts '  C - Clears the screen'
-puts '  ESC - Exit the game'
+puts '  ESC - Exits the game'
 puts
 puts '* PATTERNS:'
 puts '  1 - Cell'

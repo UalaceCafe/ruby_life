@@ -10,14 +10,14 @@ Ruby's Life is a recreation of the well-known cellular automaton [_Conway's Game
 
 With [Ruby2D](https://github.com/ruby2d/ruby2d) installed, run `ruby life.rb`
 
-| Control           | Description                                                                  |
-|:------------------|:-----------------------------------------------------------------------------|
-| Left Mouse Button | Adds or removes a cell                                                       |
-| 1..5              | Select a pattern to be drawn (see the next section)                                |
-| P                 | Pauses the game                                                              |
-| R                 | Returns the grid to the previous state (i.e. before the last cell was added) |
-| C                 | Clears the screen                                                            |                                                            
-| ESC               | Exit the game                                                                |
+| Control           | Description                                                                     |
+|:------------------|:--------------------------------------------------------------------------------|
+| Left Mouse Button | Adds or removes a pattern                                                       |
+| 1..5              | Selects a pattern to be drawn (see the next section)                            |
+| P                 | Pauses the game                                                                 |
+| R                 | Returns the grid to the previous state (i.e. before the last cell was modified) |
+| C                 | Clears the screen                                                               |                                                            
+| ESC               | Exits the game                                                                  |
 
 ## Patterns
 
