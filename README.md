@@ -44,7 +44,7 @@ This version also has it own set of rules:
 
 > 1. The boundaries are impassable; no cell can exist outside of the game screen.
 > 2. Pattern placement only create living cells - the cells around the pattern are not modified.
-> 3. The only exception to the 2nd rule is the `Cell` pattern, which can be used both as a brush and eraser.
+> 3. The `Cell` pattern is the only pattern that can be used both as a "brush" and "eraser".
 
 Furthermore, the game make use of different colors to represent the state of a cell
 
