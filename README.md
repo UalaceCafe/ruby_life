@@ -23,13 +23,13 @@ With [Ruby2D](https://github.com/ruby2d/ruby2d) installed, run `ruby life.rb`
 
 The numerical keys are used to choose a certain cell pattern to be placed. Currently, the following patterns are available:
 
-| Name               | Key |                                                                      Pattern                                                                       |
-|:-------------------|:---:|:--------------------------------------------------------------------------------------------------------------------------------------------------:|
-| Cell               |  1  |                                                                         -                                                                          |
-| Block              |  2  | ![block](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Game_of_life_block_with_border.svg/99px-Game_of_life_block_with_border.svg.png) |
-| Blinker            |  3  |                              ![blinker](https://upload.wikimedia.org/wikipedia/commons/9/95/Game_of_life_blinker.gif)                              |  
-| Glider             |  4  |                          ![glider](https://upload.wikimedia.org/wikipedia/commons/f/f2/Game_of_life_animated_glider.gif)                           |
-| Gosper glider gun  |  5  | ![gosper_glider_gun](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Game_of_life_glider_gun.svg/610px-Game_of_life_glider_gun.svg.png)  |
+| Name               | Key |                                                                       Pattern                                                                       |
+|:-------------------|:---:|:---------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Cell               |  1  |                                                                      ![cell](https://i.imgur.com/KxCvhvX.png)                                                                      |
+| Block              |  2  | ![block](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Game_of_life_block_with_border.svg/99px-Game_of_life_block_with_border.svg.png)  |
+| Blinker            |  3  |                              ![blinker](https://upload.wikimedia.org/wikipedia/commons/9/95/Game_of_life_blinker.gif)                               |  
+| Glider             |  4  |                           ![glider](https://upload.wikimedia.org/wikipedia/commons/f/f2/Game_of_life_animated_glider.gif)                           |
+| Gosper glider gun  |  5  |  ![gosper_glider_gun](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Game_of_life_glider_gun.svg/610px-Game_of_life_glider_gun.svg.png)  |
 
 ## Rules
 
